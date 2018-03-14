@@ -25,9 +25,6 @@ def green(string):
 def lightgreen(string):
 	return '\033[92m' + string + '\033[0m'
 
-def black(string):
-	return '\033[90m' + string + '\033[0m'
-
 def grey(string):
 	return '\033[37m' + string + '\033[0m'
 
@@ -66,9 +63,6 @@ def lightpurple(string):
 
 def orange(string):
 	return '\033[33m' + string + '\033[0m'
-
-def lightred(string):
-	return '\033[91m' + string + '\033[0m'
 
 # Styles
 
