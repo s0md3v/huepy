@@ -5,19 +5,19 @@ from platform import system as getos
 init()
 
 def info(string):
-	return '\033[1;33m[!]\033[1;m ' + string
+	return Fore.LIGHTYELLOW_EX + Style.BRIGHT + "[!] " + Style.RESET_ALL + string
 
 def que(string):
-	return '\033[1;34m[?]\033[1;m ' + string
+	return Fore.LIGHTBLUE_EX + Style.BRIGHT + "[?] " + Style.RESET_ALL + string
 
 def bad(string):
-	return '\033[1;31m[-]\033[1;m ' + string
+	return Fore.LIGHTRED_EX + Style.BRIGHT + "[-] " + Style.RESET_ALL + string
 
 def good(string):
-	return '\033[1;32m[+]\033[1;m ' + string
+	return Fore.LIGHTGREEN_EX + Style.BRIGHT + "[+] " + Style.RESET_ALL + string
 
 def run(string):
-	return '\033[1;97m[~]\033[1;m ' + string
+	return Fore.LIGHTWHITE_EX + Style.BRIGHT + "[~] " + Style.RESET_ALL + string
 
 # Colors
 
