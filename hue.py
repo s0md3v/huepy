@@ -1,82 +1,84 @@
 #!/usr/bin/env python
-
+from colorama import Style, Fore, init
+from platform import system as getos
 # Lables
+init()
 
 def info(string):
-	return '\033[1;33m[!]\033[1;m ' + string
+	return Fore.LIGHTYELLOW_EX + Style.BRIGHT + "[!] " + Style.RESET_ALL + string
 
 def que(string):
-	return '\033[1;34m[?]\033[1;m ' + string
+	return Fore.LIGHTBLUE_EX + Style.BRIGHT + "[?] " + Style.RESET_ALL + string
 
 def bad(string):
-	return '\033[1;31m[-]\033[1;m ' + string
+	return Fore.LIGHTRED_EX + Style.BRIGHT + "[-] " + Style.RESET_ALL + string
 
 def good(string):
-	return '\033[1;32m[+]\033[1;m ' + string
+	return Fore.LIGHTGREEN_EX + Style.BRIGHT + "[+] " + Style.RESET_ALL + string
 
 def run(string):
-	return '\033[1;97m[~]\033[1;m ' + string
+	return Fore.LIGHTWHITE_EX + Style.BRIGHT + "[~] " + Style.RESET_ALL + string
 
 # Colors
 
 def green(string):
-	return '\033[32m' + string + '\033[0m'
+	return Fore.GREEN + string + Style.RESET_ALL
 
 def lightgreen(string):
-	return '\033[92m' + string + '\033[0m'
+	return Fore.LIGHTGREEN_EX + string + Style.RESET_ALL
 
 def grey(string):
-	return '\033[37m' + string + '\033[0m'
+	return Fore.WHITE + string + Style.RESET_ALL
 
 def black(string):
-	return '\033[30m' + string + '\033[0m'
+	return Fore.BLACK + string + Style.RESET_ALL
 
 def red(string):
-	return '\033[31m' + string + '\033[0m'
+	return Fore.RED + string + Style.RESET_ALL
 
 def lightred(string):
-	return '\033[91m' + string + '\033[0m'
+	return Fore.LIGHTRED_EX + string + Style.RESET_ALL
 
 def cyan(string):
-	return '\033[36m' + string + '\033[0m'
+	return Fore.CYAN + string + Style.RESET_ALL
 
 def lightcyan(string):
-	return '\033[96m' + string + '\033[0m'
+	return Fore.LIGHTCYAN_EX + string + Style.RESET_ALL
 
 def blue(string):
-	return '\033[34m' + string + '\033[0m'
+	return Fore.BLUE + string + Style.RESET_ALL
 
 def lightblue(string):
-	return '\033[94m' + string + '\033[0m'
+	return Fore.LIGHTBLUE_EX + string + Style.RESET_ALL
 
 def purple(string):
-	return '\033[35m' + string + '\033[0m'
+	return Fore.MAGENTA + string + Style.RESET_ALL
 
 def yellow(string):
-	return '\033[93m' + string + '\033[0m'
+	return Fore.LIGHTYELLOW_EX + string + Style.RESET_ALL
 
 def white(string):
-	return '\033[97m' + string + '\033[0m'
+	return Fore.WHITE + string + Style.RESET_ALL
 
 def lightpurple(string):
-	return '\033[95m' + string + '\033[0m'
+	return Fore.LIGHTMAGENTA_EX + string + Style.RESET_ALL
 
 def orange(string):
-	return '\033[33m' + string + '\033[0m'
+	return Fore.YELLOW + string + Style.RESET_ALL
 
 # Styles
+if getos().lower()[0] != "w":
+	def bg(string):
+		return '\033[;7m' + string + Style.RESET_ALL
 
-def bg(string):
-	return '\033[;7m' + string + '\033[0m'
+	def bold(string):
+		return Style.BRIGHT + string + Style.RESET_ALL
 
-def bold(string):
-	return '\033[;1m' + string + '\033[0m'
+	def italic(string):
+		return '\033[3m' + string + '\033[0m'
 
-def italic(string):
-	return '\033[3m' + string + '\033[0m'
+	def under(string):
+		return '\033[4m' + string + Style.RESET_ALL
 
-def under(string):
-	return '\033[4m' + string + '\033[0m'
-
-def strike(string):
-	return '\033[09m' + string + '\033[0m'
+	def strike(string):
+		return '\033[09m' + string + Style.RESET_ALL
