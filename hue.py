@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Lables
+# Labels
 
 def info(string):
 	return '\033[1;33m[!]\033[1;m ' + string
