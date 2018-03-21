@@ -2,7 +2,7 @@
 <img src='https://i.imgur.com/coACsyQ.png' />
 
 Hue provides a minimal and powerful way to print colored text and labels in the terminal.</br>
-It doesn't have any dependencies and works with Python 2 as well as Python 3.
+It doesn't have any external dependencies and works with Python 2 as well as Python 3.
 
 ## Supported Stuff
 
@@ -23,13 +23,13 @@ First of all, import everything that Hue has to offer as follows:
 ```python
 from hue import *
 ```
-Now printing colored text is as simple as doing
+Printing colored text is as simple as doing
 ```python
 print red('This string is red')
 ```
 Easy right?
 But what if you want to print italic text?
-You can just do
+You can just do this
 ```python
 print italic('This string is in italic')
 ```
@@ -41,9 +41,15 @@ Output:
 
 <img src='https://i.imgur.com/Lo7ZyHq.png' />
 
+
 And what is the use of those labels?</b>
-I have been using these labels in projects to provide a minimal and informative output schema.</br>
-If some error occured in your program or something else bad happened you don't need to print the whole line in red. That doesn't look good. With hue, you can simply do this
+I have been using these labels in projects as a minimal output schema.</br>
+If some error occured in your program or something else bad happened you don't need to print the whole line in red. With hue, you can simply do this
+
+And what is the use of those lables?</b>
+I have been using these lables in projects as a minimal output schema.</br>
+For example, If some error occured in your program or something else bad happened you don't need to print the whole line in red. With hue, you can simply do this
+
 ```python
 print bad('An error occured.')
 ```
