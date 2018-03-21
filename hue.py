@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 COMMANDS = {
-	# Lables
+	# Labels
 	'info': (33, '[!] '),
 	'que': (34, '[?] '),
 	'bad': (31, '[-] '),
