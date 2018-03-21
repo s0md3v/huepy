@@ -1,8 +1,8 @@
 # Hue
 <img src='https://i.imgur.com/coACsyQ.png' />
 
-Hue provides a minimal yet powerful way to print colored text and lables in terminal.</br>
-It doesn't have any dependencies and works with python2 as well as python3.
+Hue provides a minimal and powerful way to print colored text and labels in the terminal.</br>
+It doesn't have any dependencies and works with Python 2 as well as Python 3.
 
 ## Supported Stuff
 
@@ -18,7 +18,7 @@ Following lables are supported
 
 <img src='https://i.imgur.com/dpJxqT2.png' />
 
-### Usages
+### Usage
 First of all, import everything that Hue has to offer as follows:
 ```python
 from hue import *
