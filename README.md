@@ -19,12 +19,21 @@ Following labels are supported
 
 ![Hue Labels](https://i.imgur.com/dpJxqT2.png)
 
-### Usage
+### Installation
+You can install **hue** with pip as follows:
+```
+pip install huepy
+```
+or with **easy_install**:
+```
+easy_install huepy
+```
 
+### Usage
 First of all, import everything that Hue has to offer as follows:
 
 ```python
-from hue import *
+from huepy import *
 ```
 
 Printing colored text is as simple as doing
