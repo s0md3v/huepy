@@ -1,6 +1,6 @@
 # Hue
 
-![alt text](https://i.imgur.com/coACsyQ.png)
+![Hue Logo](https://i.imgur.com/coACsyQ.png)
 
 Hue provides a minimal and powerful interface to print colored text and labels in the terminal.\
 It doesn't have any external dependencies and works with Python 2 as well as Python 3.
@@ -9,15 +9,15 @@ It doesn't have any external dependencies and works with Python 2 as well as Pyt
 
 Following styles are supported
 
-![alt text](https://i.imgur.com/899ZtQy.png)
+![Hue Styles](https://i.imgur.com/899ZtQy.png)
 
 Following colors are supported
 
-![alt text](https://i.imgur.com/9tWvPkD.png)
+![Hue Colors](https://i.imgur.com/9tWvPkD.png)
 
 Following labels are supported
 
-![alt text](https://i.imgur.com/dpJxqT2.png)
+![Hue Labels](https://i.imgur.com/dpJxqT2.png)
 
 ### Usage
 
@@ -48,7 +48,7 @@ print bold(red('This string is bold and red'))
 ```
 
 Output:
-![alt text](https://i.imgur.com/Lo7ZyHq.png)
+![Output Examples](https://i.imgur.com/Lo7ZyHq.png)
 
 And what is the use of those labels?\
 I have been using these labels in projects as a minimal output schema.\
@@ -59,7 +59,7 @@ print bad('An error occured.')
 ```
 
 Take a look at the output of all the labels
-![alt text](https://i.imgur.com/zJ7ZgUi.png)
+![Label Examples](https://i.imgur.com/zJ7ZgUi.png)
 
 #### List of all colors
 
