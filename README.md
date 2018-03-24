@@ -91,6 +91,6 @@ info, que, run, bad, good
 
 **Note:** Windows does not support ANSI escape sequences so the colors will not be print in command prompt.
 
-### License & Contribution
+### Contribution
 
 The only thing I think **Hue** needs is windows support which I can't add atm because I have no windows machine and made since people were asking for it so its a quick one. So if you can start a pull request for windows support that would be great. Additional colors and labels will be appreciated too.
