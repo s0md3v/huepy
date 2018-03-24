@@ -94,8 +94,3 @@ info, que, run, bad, good
 ### License & Contribution
 
 The only thing I think **Hue** needs is windows support which I can't add atm because I have no windows machine and made since people were asking for it so its a quick one. So if you can start a pull request for windows support that would be great. Additional colors and labels will be appreciated too.
-
-[![Creative Commons](https://i.creativecommons.org/l/by/4.0/80x15.png "Creative Commons")][ss1]\
-This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
-[ss1]: http://creativecommons.org/licenses/by/4.0/
