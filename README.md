@@ -89,7 +89,31 @@ bold, bg, under, strike, italic
 info, que, run, bad, good
 ```
 
-**Note:** Windows does not support ANSI escape sequences so the colors will not be printed in command prompt.
+### Windows 10
+
+**Note:** Windows 10 do support ANSI escape sequences, so the colors will be printed in command prompt if you enable them as follows
+In other versions of Windows, they won't be supported (hue_enable_windows_support returns False in that case).
+
+```python
+from huepy import *
+
+# Has hue_ since common use is from huepy import *
+if not hue_enable_windows_support():
+    # Disables ANSI codes if the prompt doesn't support it
+    hue_disable()
+
+print(red("a"), blue("b"))
+```
+
+Since sometimes the test is negative for some prompts (for example PyCharm Terminal), you may choose to only support Windows prompts that support it
+and don't disable the ansi codes
+
+```python
+from huepy import *
+hue_enable_windows_support()
+
+print(red("a"), blue("b"))
+```
 
 ### Contribution
 
