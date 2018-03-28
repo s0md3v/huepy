@@ -1,9 +1,9 @@
 # Hue
 
-![Hue Logo](https://i.imgur.com/coACsyQ.png)
+![Hue Logo](https://i.imgur.com/Pxe9la8.png)
 
 Hue provides a minimal and powerful interface to print colored text and labels in the terminal.\
-There are no external dependencies and Hue works with Python 2 as well as Python 3.
+It works with Python 2 as well as Python 3.
 
 ## Supported Stuff
 
@@ -89,8 +89,8 @@ bold, bg, under, strike, italic
 info, que, run, bad, good
 ```
 
-**Note:** Windows does not support ANSI escape sequences so the colors will not be printed in command prompt.
+**Note:** Windows versions below windows 10 do not support ANSI escape sequences so the colors will not be printed in command prompt.
 
 ### Contribution
 
-The only thing I think **Hue** needs is windows support which I can't add atm because I have no windows machine and made since people were asking for it so its a quick one. So if you can start a pull request for windows support that would be great. Additional colors and labels will be appreciated too.
+The only thing I think **Hue** needs is better windows compatibility. So if you can start a pull request for windows support that would be great. Additional colors and labels will be appreciated too.
