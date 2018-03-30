@@ -20,7 +20,7 @@ Following labels are supported
 ![Hue Labels](https://i.imgur.com/dpJxqT2.png)
 
 ### Installation
-You can install **Hue** with **pip** as follows:
+You can install Hue with **pip** as follows:
 ```
 pip install huepy
 ```
