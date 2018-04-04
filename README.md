@@ -23,7 +23,7 @@ Following labels are supported
 
 
 ### Installation
-You can install `hue` with **pip** as follows:
+You can install Hue with **pip** as follows:
 ```
 pip install huepy
 ```
@@ -39,21 +39,19 @@ First of all, import everything that Hue has to offer as follows:
 from huepy import *
 ```
 
-Printing colored text is as simple as doing
+To print text in a different color
 
 ```python
 print red('This string is red')
 ```
 
-Easy right?
-But what if you want to print italic text?
-You can simply do this
+For a different style of text
 
 ```python
 print italic('This string is in italic')
 ```
 
-You can also combine styles and colors
+Nest color and style to combine styles and colors
 
 ```python
 print bold(red('This string is bold and red'))
@@ -70,7 +68,7 @@ If some error occured in your program or something else bad happened you don't n
 print bad('An error occured.')
 ```
 
-Take a look at the output of all the labels
+Example outputs of the labels
 ![Label Examples](https://i.imgur.com/zJ7ZgUi.png)
 
 #### List of all colors
@@ -92,7 +90,7 @@ bold, bg, under, strike, italic
 info, que, run, bad, good
 ```
 
-**Note:** Windows versions below windows 10 do not support ANSI escape sequences so the colors will not be printed in command prompt.
+**Note:** Currently Hue rely on ANSI escape sequences to output colors, so only Windows 10 will output colors.
 
 ### Why hue
 
@@ -127,4 +125,4 @@ Here's comparison table:
 
 ### Contribution
 
-The only thing I think **Hue** needs is better windows compatibility. So if you can start a pull request for windows support that would be great. Additional colors and labels will be appreciated too.
+Further developement of Hue will be focused on Windows compatibility. Everyone is welcome to start a pull request for windows support. Additional colors and labels will be appreciated too.
