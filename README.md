@@ -119,7 +119,7 @@ Here's comparison table:
 
 ||Hue|Colorama|Termcolor|
 |---|---|--------|---------|
-|Easy to use?|Unix & Windows 10|Unix & Windows|Unix|
+|Compatibility|Unix & Windows 10|Unix & Windows|Unix|
 |Ease of use|10/10|4/10|5/10|
 |Bright Colors|Yes|No|No|
 
