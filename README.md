@@ -92,12 +92,12 @@ bold, bg, under, strike, italic
 info, que, run, bad, good
 ```
 
-**Note:** Windows versions below windows 10 do not support ANSI escape sequences so the colors will not be printed in command prompt.
+**Note:** Windows versions before Windows 10 do not support ANSI escape sequences so the colors will not be printed in command prompt.
 
 ### Why hue
 
-Because its awesome!
-Lets print a red colored string in popular coloring libraries:
+Because it's awesome!
+Let's print a red colored string in popular coloring libraries:
 
 - Colorama
 ```python
@@ -127,4 +127,4 @@ Here's comparison table:
 
 ### Contribution
 
-The only thing I think **Hue** needs is better windows compatibility. So if you can start a pull request for windows support that would be great. Additional colors and labels will be appreciated too.
+The only thing I think **Hue** needs is better Windows compatibility. So if you can start a pull request for windows support that would be great. Additional colors and labels will be appreciated too.
