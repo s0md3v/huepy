@@ -19,7 +19,7 @@ Following colors are supported
 
 Following labels are supported
 
-![Hue Labels](https://i.imgur.com/dpJxqT2.png)
+![Hue Labels](https://i.imgur.com/8qBq0Zd.png)
 
 
 ### Installation
@@ -71,7 +71,7 @@ print bad('An error occured.')
 ```
 
 Take a look at the output of all the labels
-![Label Examples](https://i.imgur.com/zJ7ZgUi.png)
+![Label Examples](https://i.imgur.com/b4Kj5Ym.png)
 
 #### List of all colors
 
