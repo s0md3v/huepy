@@ -1,5 +1,12 @@
 #!/usr/bin/env python
 
+import ctypes
+import platform
+
+if platform.system() == 'Windows':
+    kernel32 = ctypes.windll.kernel32
+    kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
+
 COMMANDS = {
     # Lables
     'info': (33, '[!] '),
@@ -37,7 +44,7 @@ COMMANDS = {
 def _gen(string, prefix, key):
     colored = prefix if prefix else string
     not_colored = string if prefix else ''
-    return '\033[{}m{}\033[0m{}'.format(key, colored, not_colored)
+    return u'\033[{}m{}\033[0m{}'.format(key, colored, not_colored)
 
 
 for key, val in COMMANDS.items():
