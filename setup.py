@@ -22,8 +22,8 @@ with codecs.open(abs_path(name, '__init__.py'), 'r', 'utf-8') as fp:
 setup(
     name=name,
     version=version,
-    url='https://github.com/UltimateHackers/hue',
-    download_url='https://github.com/UltimateHackers/hue/tarball/master',
+    url='https://github.com/s0md3v/hue',
+    download_url='https://github.com/s0md3v/hue/tarball/master',
     author='Somdev Sangwan',
     author_email='s0md3v@gmail.com',
     description='Print awesomely in terminals.',
