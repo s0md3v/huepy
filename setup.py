@@ -1,23 +1,9 @@
-import codecs
-import os
-import re
+import huepy
 
 from setuptools import find_packages, setup
 
-
-def abs_path(*relative_path_parts):
-    return os.path.join(os.path.abspath(os.path.dirname(__file__)),
-                        *relative_path_parts)
-
-
 name = 'huepy'
-
-with codecs.open(abs_path(name, '__init__.py'), 'r', 'utf-8') as fp:
-    try:
-        version = re.findall(r"^__version__ = '([^']+)'.*?$",
-                             fp.read(), re.M)[0]
-    except IndexError:
-        raise RuntimeError('Unable to determine version.')
+version = huepy.__version__
 
 setup(
     name=name,
