@@ -2,10 +2,11 @@
 
 ![Hue Logo](https://i.imgur.com/Pxe9la8.png)
 
-Hue provides a minimal and powerful interface to print colored text and labels in the terminal.\
-It works with Python 2 as well as Python 3.
+Hue provides a minimal and powerful interface to print colored text and labels
+in the terminal.\ It works with Python 2 as well as Python 3.
 
-What makes hue better than other coloring libraries? [Here's a comparison.](#why-hue)
+What makes hue better than other coloring libraries? [Here's a
+comparison.](#why-hue)
 
 ## Supported Stuff
 
@@ -42,7 +43,7 @@ from huepy import *
 Printing colored text is as simple as doing
 
 ```python
-print red('This string is red')
+print(red('This string is red'))
 ```
 
 Easy right?
@@ -50,13 +51,13 @@ But what if you want to print italic text?
 You can simply do this
 
 ```python
-print italic('This string is in italic')
+print(italic('This string is in italic'))
 ```
 
 You can also combine styles and colors
 
 ```python
-print bold(red('This string is bold and red'))
+print(bold(red('This string is bold and red')))
 ```
 
 Output:
@@ -67,7 +68,7 @@ I have been using these labels in projects as a minimal output schema.\
 If some error occured in your program or something else bad happened you don't need to print the whole line in red. With hue, you can simply do this
 
 ```python
-print bad('An error occured.')
+print(bad('An error occured.'))
 ```
 
 Take a look at the output of all the labels
@@ -102,29 +103,34 @@ Lets print a red colored string in popular coloring libraries:
 - Colorama
 ```python
 from colorama import Fore
-print Fore.RED + 'This string is red'
+print(Fore.RED + 'This string is red')
 ```
 - Termcolor
 ```python
 import sys
 from termcolor import colored, cprint
-print colored('This string is red', 'red')
+print(colored('This string is red', 'red'))
 ```
 - Hue
 ```python
 from hue import *
-print red('This string is red')
+print(red('This string is red'))
 ```
 Here's comparison table:
 
-||Hue|Colorama|Termcolor|
-|---|---|--------|---------|
-|Compatibility|Unix & Windows 10|Unix & Windows|Unix|
-|Ease of use|10/10|4/10|5/10|
-|Bright Colors|Yes|No|No|
+|             |Hue              |Colorama      |Termcolor|
+|-------------|-----------------|--------------|---------|
+|Compatibility|Unix & Windows 10|Unix & Windows|Unix     |
+|Ease of use  |10/10            |4/10          |5/10     |
+|Bright Colors|Yes              |No            |No       |
 
-**Note:** Colorama and Termcolor print bold styled strings when asked for bright colored strings. On the other hand, Hue supports both bright and bold strings. Also the *Ease to use* ratings are a result of my own experience and may differ for others.
+**Note:** Colorama and Termcolor print bold styled strings when asked for
+bright colored strings. On the other hand, Hue supports both bright and bold
+strings. Also the *Ease to use* ratings are a result of my own experience and
+may differ for others.
 
 ### Contribution
 
-The only thing I think **Hue** needs is better windows compatibility. So if you can start a pull request for windows support that would be great. Additional colors and labels will be appreciated too.
+The only thing I think **Hue** needs is better windows compatibility. So if
+you can start a pull request for windows support that would be great.
+Additional colors and labels will be appreciated too.
