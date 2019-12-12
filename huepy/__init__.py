@@ -1,4 +1,4 @@
-from hue import COMMANDS
+from .hue import COMMANDS
 
 __all__ = list(COMMANDS.keys())
 __version__ = '1.0.1'
