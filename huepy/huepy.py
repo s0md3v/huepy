@@ -7,6 +7,8 @@ if platform.system() == 'Windows':
     kernel32 = ctypes.windll.kernel32
     kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
 
+print_mode = False
+
 COMMANDS = {
     # Lables
     'info': (33, '[!] '),
@@ -17,18 +19,23 @@ COMMANDS = {
 
     # Colors
     'green': 32,
+    'lgreen': 92,
     'lightgreen': 92,
     'grey': 37,
     'black': 30,
     'red': 31,
+    'lred': 91,
     'lightred': 91,
     'cyan': 36,
+    'lcyan': 96,
     'lightcyan': 96,
     'blue': 34,
+    'lblue': 94,
     'lightblue': 94,
     'purple': 35,
     'yellow': 93,
     'white': 97,
+    'lpurple': 95,
     'lightpurple': 95,
     'orange': 33,
 
@@ -44,7 +51,11 @@ COMMANDS = {
 def _gen(string, prefix, key):
     colored = prefix if prefix else string
     not_colored = string if prefix else ''
-    return '\033[{}m{}\033[0m{}'.format(key, colored, not_colored)
+    result = '\033[{}m{}\033[0m{}'.format(key, colored, not_colored)
+    if print_mode:
+        print(result)
+    else:
+        return result
 
 
 for key, val in COMMANDS.items():
