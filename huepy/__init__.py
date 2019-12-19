@@ -5,7 +5,7 @@ __all__ = ['bad', 'bg', 'black', 'blue', 'bold', 'cyan', 'good', 'green',
            'lightgreen', 'lpurple', 'lightpurple', 'lred', 'lightred','orange',
            'purple', 'que', 'red', 'run','strike', 'under', 'white', 'yellow']
 
-__version__ = '1.1'
+__version__ = '1.2.1'
 
 if __name__ == '__main__':
     print('All commands: ', __all__)
