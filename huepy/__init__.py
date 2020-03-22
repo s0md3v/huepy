@@ -2,8 +2,9 @@ from .huepy import *
 
 __all__ = ['bad', 'bg', 'black', 'blue', 'bold', 'cyan', 'good', 'green',
            'grey', 'info', 'italic', 'lblue', 'lightblue', 'lcyan', 'lgreen',
-           'lightgreen', 'lpurple', 'lightpurple', 'lred', 'lightred','orange',
-           'purple', 'que', 'red', 'run','strike', 'under', 'white', 'yellow']
+           'lightgreen', 'lpurple', 'lightpurple', 'lred', 'lightred',
+           'orange', 'purple', 'que', 'red', 'run', 'strike', 'under', 'warn',
+           'white', 'yellow']
 
 __version__ = '1.2.1'
 
