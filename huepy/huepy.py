@@ -10,7 +10,7 @@ if platform.system() == 'Windows':
 print_mode = False
 
 
-def rainbow(string):
+def _rainbow(string):
     colors = [val for key,val in COMMANDS.items() if isinstance(val,int)]
     out = "".join([_gen(string[i],'',colors[i%len(colors)]) for i in range(len(string))])
     return out
@@ -54,7 +54,7 @@ COMMANDS = {
     'strike': '09',
 
     # Special
-    'rainbow' : rainbow,
+    'rainbow' : _rainbow,
 }
 
 
