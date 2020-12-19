@@ -53,7 +53,10 @@ COMMANDS = {
 def _gen(string, prefix, key):
     colored = prefix if prefix else string
     not_colored = string if prefix else ''
-    result = '\033[{}m{}\033[0m{}'.format(key, colored, not_colored) if not NO_COLOR else string
+    if not NO_COLOR:
+        result = '\033[{}m{}\033[0m{}'.format(key, colored, not_colored)
+    else:
+        result = colored + not_colored 
     if print_mode:
         print(result)
     else:
