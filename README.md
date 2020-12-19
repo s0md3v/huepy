@@ -63,6 +63,8 @@ print(bold(red('This string is bold and red')))
 Output:
 ![Output Examples](https://i.imgur.com/Lo7ZyHq.png)
 
+This module also respects the [`NO_COLOR`](https://no-color.org/) environment variable.
+
 And what is the use of those labels?\
 I have been using these labels in projects as a minimal output schema.\
 If some error occured in your program or something else bad happened you don't need to print the whole line in red. With hue, you can simply do this
