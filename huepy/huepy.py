@@ -2,12 +2,14 @@
 
 import ctypes
 import platform
+from os import environ
 
 if platform.system() == 'Windows':
     kernel32 = ctypes.windll.kernel32
     kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
 
 print_mode = False
+NO_COLOR = bool(environ.get('NO_COLOR', None))
 
 COMMANDS = {
     # Lables
@@ -51,7 +53,7 @@ COMMANDS = {
 def _gen(string, prefix, key):
     colored = prefix if prefix else string
     not_colored = string if prefix else ''
-    result = '\033[{}m{}\033[0m{}'.format(key, colored, not_colored)
+    result = '\033[{}m{}\033[0m{}'.format(key, colored, not_colored) if not NO_COLOR else string
     if print_mode:
         print(result)
     else:
