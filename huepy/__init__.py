@@ -1,7 +1,7 @@
 from .huepy import *
 
 __all__ = ['bad', 'bg', 'black', 'blue', 'bold', 'cyan', 'good', 'green',
-           'grey', 'info', 'italic', 'lblue', 'lightblue', 'lcyan', 'lgreen',
+           'grey', 'info', 'italic', 'lblue', 'lightblue', 'lcyan', 'lightcyan', 'lgreen',
            'lightgreen', 'lpurple', 'lightpurple', 'lred', 'lightred','orange',
            'purple', 'que', 'red', 'run','strike', 'under', 'white', 'yellow']
 
