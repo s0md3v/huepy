@@ -2,7 +2,6 @@
 
 from huepy import *
 
-
 def Preview():
     print("")
     print(bold("    AVAILABLE COLORS    ")+bold("    AVAILABLE STYLES    ")+bold("    AVAILABLE MODES"))
@@ -26,10 +25,14 @@ def Preview():
 def Help():
     Preview()
     print("""
-    Colors :  white, grey, black, green, lightgreen, cyan, lightcyan,
-              red, blue, lightblue, purple, lightpurple, orange, yellow
+    Colors :  white, grey, black, green, lightgreen, lgreen, cyan, lightcyan, lcyan
+              red, blue, lightblue, lblue, purple, lightpurple, lpurple, orange, yellow
 
         print(red("This is Red Colored Text"))
+
+        print(lightcyan("This is Red Colored Text"))
+                        or
+        print(lcyan("This is Red Colored Text"))
 
     Styles :  bold, bg, under, strike, italic
 
