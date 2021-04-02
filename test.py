@@ -12,7 +12,7 @@ def Preview():
     print(green("  ████████████████████  ")+"     "+strike("Strike Through")+"          "+bad(under("Bad")+ " Sign!"))
     print(lightgreen("  ████████████████████  ")+italic("      Italic Text            ")+good(under("Good")+ " Sign!"))
     print(cyan("  ████████████████████       ")+bold(under("Bold Underline")))
-    print(lightcyan("  ████████████████████        ")+bold(strike("Bold Strike")))
+    #print(lightcyan("  ████████████████████        ")+bold(strike("Bold Strike")))
     print(red("  ████████████████████        ")+bold(italic("Bold Italic")))
     print(blue("  ████████████████████"))
     print(lightblue("  ████████████████████"))
