@@ -90,7 +90,7 @@ bold, bg, under, strike, italic
 #### List of all labels
 
 ```python
-info, que, run, bad, good
+info, que, run, bad, good, warn
 ```
 
 **Note:** Windows versions below windows 10 do not support ANSI escape sequences so the colors will not be printed in command prompt.

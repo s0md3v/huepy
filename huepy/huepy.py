@@ -10,8 +10,9 @@ if platform.system() == 'Windows':
 print_mode = False
 
 COMMANDS = {
-    # Lables
-    'info': (33, '[!] '),
+    # Labels
+    'warn': (33, '[!] '),
+    'info': (96, '[*] '),
     'que': (34, '[?] '),
     'bad': (31, '[-] '),
     'good': (32, '[+] '),
