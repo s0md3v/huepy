@@ -9,6 +9,13 @@ if platform.system() == 'Windows':
 
 print_mode = False
 
+
+def _rainbow(string):
+    colors = [val for key,val in COMMANDS.items() if isinstance(val,int)]
+    out = "".join([_gen(string[i],'',colors[i%len(colors)]) for i in range(len(string))])
+    return out
+
+
 COMMANDS = {
     # Lables
     'info': (33, '[!] '),
@@ -45,13 +52,20 @@ COMMANDS = {
     'italic': '3',
     'under': '4',
     'strike': '09',
+
+    # Special
+    'rainbow' : _rainbow,
 }
 
 
 def _gen(string, prefix, key):
     colored = prefix if prefix else string
     not_colored = string if prefix else ''
-    result = '\033[{}m{}\033[0m{}'.format(key, colored, not_colored)
+    is_special = callable(key)
+    if is_special:
+        result = key(string)
+    else:
+        result = '\033[{}m{}\033[0m{}'.format(key, colored, not_colored)
     if print_mode:
         print(result)
     else:

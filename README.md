@@ -84,7 +84,7 @@ blue, lightblue, purple, light purple, orange, yellow
 #### List of all styles
 
 ```python
-bold, bg, under, strike, italic
+bold, bg, under, strike, italic, rainbow
 ```
 
 #### List of all labels
